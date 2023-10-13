@@ -2,3 +2,5 @@
 
 #### 2023/10/13
 - [SearchAlgorithm](SearchAlgorithm/)
+  - Language : Java, Python
+  - Algorithm : LinearSearch, BinarySearch 
