@@ -1,5 +1,6 @@
 ## Java, Python을 이용한 검색 알고리즘 구현 (2023-10-13)
-> [Java Version](Java/) 
+> [Java Version](Java/)
+
 > [Python Version](Python/)
 
 1. LinearSearch (선형탐색)
