@@ -1,0 +1,19 @@
+1. git init : 지정한 폴더에 .git 파일이 생성된다
+
+2. git remote add origin {저장소 주소} : 특정 저장소를 origin이라는 원격 저장소에 추가한다.
+
+3. git add . : git 스테이징 영역에 파일을 추가한다.
+(특정경로, 특정파일, 특정다수파일, 특정확장자파일 파일을 추가하는 방법은 여러가지 상황에 맞게 구글링!)
+
+4. git commit -m "메모할 내용" : push하기 전에 commit messsage를 작성한다.
+(git commit : commit message를 더 자세하게 작성 가능하다.)
+
+5-1. git checkout {branch name} : 브랜치 변경 
+5-2. git switch {branch name} : 브랜치 변경
+5-3. git push -u origin {branch name} : 브랜치 변경
+(5-3은 push도 동시에 한다.)
+
+6. git push : 위 과정이 끝나면 원격저장소로 file을 보내준다.
+
+* 브랜치 이름 변경
+git branch -M {기존 branch name} {변경할 branch name}
