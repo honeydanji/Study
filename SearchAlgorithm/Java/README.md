@@ -28,6 +28,18 @@
     
     >> 그러므로 Arrays.binarySearch()를 이용해서 이진탐색에 대한 기준은 Comparator에 따라서 다르다.
 
+    ```Java
+    public static final Comparator<personData> HEIGHT_ORDER = new HeightOrderComparator(); 
+
+        private static class HeightOrderComparator implements Comparator<personData> {
+
+            public int compare(personData pd1, personData pd2) {
+                return (pd1.height > pd2.height) ? 1 :
+                        (pd1.height < pd2.height) ? -1 : 0;
+            }
+        }
+    ```
+
 #### TIP
 - @Override의 사용 유무
     >> 보통 클래스 or 인터페이스를 상속받아서 메서드를 사용할 때 가독성을 위해 @Override를 사용한다.
