@@ -1,2 +1,4 @@
 ## 공부 기록
-[Java 폴더](SearchAlgorithm/Java/)
+
+#### 2023/10/13
+- [SearchAlgorithm](SearchAlgorithm/)
