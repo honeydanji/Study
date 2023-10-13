@@ -59,12 +59,6 @@
     }
     ```
     >> bianrySearch0() 코드를 보면 객체배열 비교에서 이진탐색이 작동되는 방식을 알 수 있다.
-    
-    >> Comparator를 구현해서 사용한다. 왜?? 객체마다 비교 기준을 달리할 수 있다. 즉 커스텀이 가능하다.
-    
-    >> 예제 코드에서는 "height"를 기준으로 Comparator를 구현했다.
-    
-    >> 그러므로 Arrays.binarySearch()를 이용해서 이진탐색에 대한 기준은 Comparator에 따라서 다르다.
 
     ```Java
     // Comprator 정의(height 기준)
@@ -78,6 +72,14 @@
             }
         }
     ```
+    
+    >> Comparator를 구현해서 사용한다. 왜?? 객체마다 비교 기준을 달리할 수 있다. 즉 커스텀이 가능하다.
+    
+    >> 예제 코드에서는 "height"를 기준으로 Comparator를 구현했다.
+    
+    >> 그러므로 Arrays.binarySearch()를 이용해서 이진탐색에 대한 기준은 Comparator에 따라서 다르다.
+
+
 
 #### TIP
 - @Override의 사용 유무
