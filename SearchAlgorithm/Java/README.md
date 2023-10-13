@@ -21,6 +21,43 @@
     >> 자연정렬에 대한 개념만 체크하고 넘어가자.
 - Object_Order Version
     >> Arrays.binarySearch()를 사용해서 Comparator 객체를 넘겨주는게 핵심이다.
+    ```Java
+    Arrays.binarySearch(persondata, new personData("", height, 0.0), personData.HEIGHT_ORDER);
+    ```
+    
+    >> Arrays.binarySearch의 구성을 한번보자.
+    ```Java
+    // binarySearch 구조
+    public static <T> int binarySearch(T[] a, T key, Comparator<? super T> c) {
+        return binarySearch0(a, 0, a.length, key, c);
+    }
+    ```
+    - a : 주어진 배열, key : 찾고자하는 객체, Comparator : 요소 비교 
+    >> Arrays.binarySearch의 작동방식을 이해하기 위해서는 binaarySearch0()의 구조를 알아야 한다.
+    ```Java
+    private static <T> int binarySearch0(T[] a, int fromIndex, int toIndex,
+                                         T key, Comparator<? super T> c) {
+        if (c == null) {
+            return binarySearch0(a, fromIndex, toIndex, key);
+        }
+        int low = fromIndex;
+        int high = toIndex - 1;
+
+        while (low <= high) {
+            int mid = (low + high) >>> 1;
+            T midVal = a[mid];
+            int cmp = c.compare(midVal, key);
+            if (cmp < 0)
+                low = mid + 1;
+            else if (cmp > 0)
+                high = mid - 1;
+            else
+                return mid; // key found
+        }
+        return -(low + 1);  // key not found.
+    }
+    ```
+    >> bianrySearch0() 코드를 보면 객체배열 비교에서 이진탐색이 작동되는 방식을 알 수 있다.
     
     >> Comparator를 구현해서 사용한다. 왜?? 객체마다 비교 기준을 달리할 수 있다. 즉 커스텀이 가능하다.
     
@@ -29,6 +66,7 @@
     >> 그러므로 Arrays.binarySearch()를 이용해서 이진탐색에 대한 기준은 Comparator에 따라서 다르다.
 
     ```Java
+    // Comprator 정의(height 기준)
     public static final Comparator<personData> HEIGHT_ORDER = new HeightOrderComparator(); 
 
         private static class HeightOrderComparator implements Comparator<personData> {
