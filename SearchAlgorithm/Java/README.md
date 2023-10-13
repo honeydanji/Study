@@ -31,8 +31,9 @@
     public static <T> int binarySearch(T[] a, T key, Comparator<? super T> c) {
         return binarySearch0(a, 0, a.length, key, c);
     }
+    // a : 주어진 배열, key : 찾고자하는 객체, Comparator : 요소 비교 
     ```
-    - a : 주어진 배열, key : 찾고자하는 객체, Comparator : 요소 비교 
+    
     >> Arrays.binarySearch의 작동방식을 이해하기 위해서는 binaarySearch0()의 구조를 알아야 한다.
     ```Java
     private static <T> int binarySearch0(T[] a, int fromIndex, int toIndex,
