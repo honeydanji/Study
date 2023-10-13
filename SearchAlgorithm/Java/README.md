@@ -8,8 +8,10 @@
     - static int binarySearch(Obejct[] a, Object key) >> 자연 정렬
     - static <T> int binarySearch(T[] a, T key, Comparator<? super T> c) >> 순서 정렬
 
-    >> 객체 배열의 이진 탐색에는 2가지 방법이 위와 같이 존재한다. 
-    >> binarySearch를 보면 파라미터 타입이 Object 최상위 클래스임을 알 수 있다. 
+    >> 객체 배열의 이진 탐색에는 2가지 방법이 위와 같이 존재한다.
+    
+    >> binarySearch를 보면 파라미터 타입이 Object 최상위 클래스임을 알 수 있다.
+    
     >> 그러므로 어떠한 타입의 배열이 들어와도 받을 수 있다.
 
 #### summary
@@ -19,8 +21,11 @@
     >> 자연정렬에 대한 개념만 체크하고 넘어가자.
 - Object_Order Version
     >> Arrays.binarySearch()를 사용해서 Comparator 객체를 넘겨주는게 핵심이다.
+    
     >> Comparator를 구현해서 사용한다. 왜?? 객체마다 비교 기준을 달리할 수 있다. 즉 커스텀이 가능하다.
+    
     >> 예제 코드에서는 "height"를 기준으로 Comparator를 구현했다.
+    
     >> 그러므로 Arrays.binarySearch()를 이용해서 이진탐색에 대한 기준은 Comparator에 따라서 다르다.
 
 #### TIP
