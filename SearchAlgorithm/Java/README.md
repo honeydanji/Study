@@ -26,9 +26,14 @@
 #### TIP
 - @Override의 사용 유무
     >> 보통 클래스 or 인터페이스를 상속받아서 메서드를 사용할 때 가독성을 위해 @Override를 사용한다.
+    
     >> Comparator를 상속받았음에도 불구하고 @Override를 사용하지 않는다.
+    
     >> 그건 Comparator의 compare가 Java에서 제공하는 내장 메소드이기 때문이다.
+    
     >> 정리를 하면 (상속받는 경우에서)
+    
     >> 사용자 정의 메소드 : @Override를 사용
+    
     >> Java에서 제공하는 내장 메서드 : @Override를 사용 X 
         
