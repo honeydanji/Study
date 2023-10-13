@@ -1,5 +1,6 @@
 ## Java, Python을 이용한 검색 알고리즘 구현 (2023-10-13)
-[Java](Java/) [Python](Python/)
+> [Java Version](Java/) 
+> [Python Version](Python/)
 
 1. LinearSearch (선형탐색)
 - 개념 : 원하는 key를 찾을 때 까지 순차적으로 지정한 범위의 index를 탐색하는 방법
