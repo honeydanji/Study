@@ -1,0 +1,38 @@
+#### step1 . 작업 파일 임시저장
+
+1. git add . : 스테이징 영역에 파일 올리기
+
+2. git stash : 스테시 영역에 파일(스테시) 임시 저장
+
+3. git stash list : 스테시 영역에 임시 저장된 파일(스테시) 확인
+
+
+#### step2 . 브랜치 변경
+
+1. git branch : 현재 브랜치 확인
+
+2. git checkout {branchname} : 브랜치 이동
+
+
+#### step3 . 브랜치 병합
+
+1. git checkout main : origin main 브랜치로 이동
+
+2. git fetch upstream main : 원격(upstream)의 변경 사항을 가져오기
+
+3. git checkout main : 현재 브랜치를 main 브랜치로 전환
+
+4. git merge upstream/main : upstream/main 브랜치를 현재 브랜치로 병합
+
+5. git push origin main : 변경 사항을 원격(origin)의 main 브랜치로 푸시
+
+
+#### step4. 스테시 영역에 임시저장된 파일 불러오기
+
+1. git stash list : 스테시 영역 파일(스테시) 확인
+
+2-1 git stash apply : 스테시 영역에 있는 모든 파일(스테시) 복원
+2-2 git stash apply stash@{index} : 스테시 영역에 있는 index 번호에 해당하는 파일(스테시) 복원
+
+3-1 git stash drop : 모든 스테시 삭제
+3-2 git stash drop stash@{index} : index 번호에 해당하는 스테시 삭제
