@@ -34,9 +34,10 @@
 <img src ="https://github.com/honeydanji/Algorithm/assets/129818881/88992c81-7ca2-4b9d-8c25-cc583e00c786">
     - Error : 시스템에 비정상적인 상황이 생겼을 때 발생하는 예외
     - Exception : 개발자가 구현한 로직에서 발생 >> 미리 예측이 가능한 영역
+
     
 - Checked Exception vs UnChecked Exception
-<imge src = "https://github.com/honeydanji/Algorithm/assets/129818881/ba7e70d0-6596-477a-aa33-ed92cbad238a">
+<img src = "https://github.com/honeydanji/Algorithm/assets/129818881/ba7e70d0-6596-477a-aa33-ed92cbad238a">
 
 - RuntimeException 무엇? >> 컴파일이 아닌 프로그램이 실행될 때 발생하는 예외
 
