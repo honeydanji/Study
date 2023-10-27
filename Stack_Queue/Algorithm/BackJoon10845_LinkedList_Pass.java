@@ -3,10 +3,10 @@ package Stack_Queue.Algorithm;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
-public class BackJoon10845 {
+public class BackJoon10845_LinkedList_Pass {
     private static int[] queue;
     private static int capacity;
     private static int front;
@@ -25,7 +25,8 @@ public class BackJoon10845 {
         queue = new int[capacity];
 
         // 결과값 저장
-        List<Integer> result = new ArrayList<>();
+        // List<Integer> result = new ArrayList<>();
+        List<Integer> result = new LinkedList<>();
         String[] pp;
 
         String inputValue = "";
