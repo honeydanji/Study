@@ -24,7 +24,7 @@ public class BackJoon1406_LinkedList_ListIterator_Pass{
             inputList.add(s);
         }
         
-        // 
+        //
         ListIterator<Character> iter = inputList.listIterator();
 
         // 커서 이동
