@@ -1,5 +1,10 @@
 ## 공부 기록
 
+#### 2023/10/28
+- [RecursiveAlgorithm](RecursiveAlgorithm/)
+  - Language : Java, Python
+  - Algorithm : Recursive
+
 #### 2023/10/21
 - [Stack_Queue](Stack_Queue/)
   - Language : Java, Python
