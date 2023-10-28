@@ -11,9 +11,15 @@
     - 시간초과를 해결하려면 실제로 커서가 위치만 나타내는 것이 아닌 움직여야 하는 것이 핵심이다.
 
 2. LikeedList, ListIterator -> Pass
+    <img src = "https://github.com/honeydanji/Study/assets/129818881/91a2fe7f-257a-4aa9-b0c9-0a6691572fbf">
     - ListIterator를 이용하면 실제로 커서를 이용해 요소를 제어할 수 있다.
     - 요소를 제어한 뒤에 커서는 처음으로 돌아가지 않는다. >> 시간복잡도 O(1)
     - 시간초과를 해결
+
+3. Stack -> Pass
+    <img src = "https://github.com/honeydanji/Study/assets/129818881/49cb3d9b-44f1-456d-8d5f-475e89e7920f">
+    - LikeedList, ListIterator를 이용해서 푼 것과 로직에 차이는 거의 없다.
+    - 속도는 Stack이 느리고 메모리는 적게 차지했다. 
 
 #### Interface Iterator<E>
 - ListIterator는 List 인터페이스를 확장한 서브 인터페이스
