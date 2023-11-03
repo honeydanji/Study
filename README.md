@@ -1,5 +1,10 @@
 ## 공부 기록
 
+#### 2023/11/04
+- [SortingAlgorithm 1차](SoringAlgorithm/)
+  - Language : Java, Python
+  - Algorithm : BubbleSort, StraightSelectionSort, StraightInsertionSort, ShellSort
+
 #### 2023/10/28
 - [RecursiveAlgorithm](RecursiveAlgorithm/)
   - Language : Java, Python
