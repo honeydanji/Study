@@ -1,5 +1,10 @@
 ## 공부 기록
 
+#### 2023/11/11
+- [SortingAlgorithm 2차](SortingAlgorithm2/)
+  - Language : Java, Python
+  - Algorithm : QuickSort, MergeSort
+
 #### 2023/11/04
 - [SortingAlgorithm 1차](SortingAlgorithm/)
   - Language : Java, Python
