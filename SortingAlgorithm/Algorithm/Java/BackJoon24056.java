@@ -3,7 +3,6 @@ package SortingAlgorithm.Algorithm.Java;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Arrays;
 
 public class BackJoon24056 {
 
@@ -29,35 +28,26 @@ public class BackJoon24056 {
     }
 
     public static void insertionSort(int[] arr, int[] brr) {
-        int[] testArr;
-        int[] testBrr;
-        String testA;
-        String testB;
         int n = arr.length;
         for (int i = 1; i < n; i++) {
-            int newItem = arr[i];
+
+            int newItem = arr[i]; // 타겟
+
             int loc = i - 1;
             
             while (loc >= 0 && newItem < arr[loc]) {
-                arr[loc + 1] = arr[loc];
-                loc--;
-                
-                testArr = arr;
-                testBrr = brr;
+                arr[loc + 1] = arr[loc]; // 앞에 있는 숫자가 뒤에 오는 숫자보다 더 작을 때 삽입 >> 앞에 수가 크면 멈춤. 
 
-                testA = Arrays.toString(testArr).replaceAll("[^0-9]", "");
-                testB = Arrays.toString(testBrr).replaceAll("[^0-9]", "");
+                loc--; // -1 되면 반복문 멈춤 즉 커서위치가 맨앞으로 간다. 더이상 비교할 값이 존재하지 않음. 
 
-                System.out.println(testA + " " + testB);
-
-                if(Integer.parseInt(testA) == Integer.parseInt(testB)) {
-                    System.out.println(1);
-                    break;
-                }
-                if(Integer.parseInt(testA) < Integer.parseInt(testB)) {
+                // i 는 타겟의 위치
+                // 타겟은 i - 1 과 1 + 1 사이에 존재하면 안된다. 
+                if (newItem == brr[i-1] && newItem == brr[i+1]) {
                     System.out.println(0);
-                    break;
+                }else {
+                    System.out.println(1);
                 }
+                
             }
 
             if (loc + 1 != i) {
