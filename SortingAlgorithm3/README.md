@@ -18,3 +18,5 @@
     // 배열의 최대값을 찾는 함수식
     Arrays.stream(array).max().orElse(0)
 ```
+
+

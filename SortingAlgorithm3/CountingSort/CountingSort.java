@@ -43,6 +43,4 @@ public class CountingSort {
             System.out.println(x[i]);
         }
     }
-
-    
 }

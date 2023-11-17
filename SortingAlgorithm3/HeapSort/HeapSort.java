@@ -75,5 +75,4 @@ public class HeapSort {
             System.out.println(x[i]);
         }
     }
-    
 }
