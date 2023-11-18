@@ -1,6 +1,6 @@
 ## 공부 기록
 #### 2023/11/18
-- [SortingAlgorithm 2차](SortingAlgorithm3/)
+- [SortingAlgorithm 3차](SortingAlgorithm3/)
   - Language : Java, Python
   - Algorithm : HeapSort, CountingSort
 
