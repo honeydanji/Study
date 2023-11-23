@@ -29,3 +29,10 @@
   - Language : Java, Python
   - Algorithm : LinearSearch, BinarySearch 
 
+
+
+#### TIP
+- 우선순위큐
+  - 최대힙 또는 최소힙을 구할 수 있는 큐.
+  - 가장 중요한 값 또는 가장 중요하지 않은 값을 뽑을 때 유용함.
+
