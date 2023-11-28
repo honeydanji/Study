@@ -1,4 +1,9 @@
 ## 공부 기록
+#### 2023/11/24
+- [StringSearch](StringSearch/)
+  - Language : Java, Python
+  - Algorithm : BruteForce, KMP, Boyer_Moore
+
 #### 2023/11/18
 - [SortingAlgorithm 3차](SortingAlgorithm3/)
   - Language : Java, Python
