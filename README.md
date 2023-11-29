@@ -1,4 +1,10 @@
 ## 공부 기록
+
+#### 2023/11/30
+- [LinkedList](LinkedList/)
+  - Language : Java, Python
+  - Algorithm : LinkedList(Pointer)
+
 #### 2023/11/24
 - [StringSearch](StringSearch/)
   - Language : Java, Python
